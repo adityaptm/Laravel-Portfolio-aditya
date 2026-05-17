@@ -726,24 +726,54 @@ body {
   background: #020617;
   border-top: 1px solid #1e293b;
   margin-top: 60px;
-  padding: 30px 0;
-  text-align: center;
+  padding: 40px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
 }
 
 .footer-social a {
-  font-size: 1.3rem;
-  color: #94a3b8;
-  margin: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .footer-social a:hover {
-  color: #10b981;
+  background: #10b981;
+  color: #020617;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
 }
 
-.footer p {
-  font-size: 0.85rem;
+.footer-bottom p {
   color: #64748b;
-  margin-top: 10px;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 
 /* 16. RESUME PAGE  */

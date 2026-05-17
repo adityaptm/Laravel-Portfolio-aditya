@@ -34,6 +34,24 @@ Route::get('/contact', function () {
 });
 
 Route::post('/contact', function (\Illuminate\Http\Request $request) {
-    // Simple contact form handler
+    $request->validate([
+        'name' => 'required',
+        'email' => 'required|email',
+        'subject' => 'required',
+        'message' => 'required',
+    ]);
+
+    \App\Models\Message::create($request->all());
+
     return back()->with('success', true);
 });
+
+// Admin Routes
+Route::get('/admin/login', [\App\Http\Controllers\AdminController::class, 'showLogin']);
+Route::post('/admin/login', [\App\Http\Controllers\AdminController::class, 'login']);
+Route::get('/admin/logout', [\App\Http\Controllers\AdminController::class, 'logout']);
+
+Route::get('/admin/dashboard', [\App\Http\Controllers\AdminController::class, 'dashboard']);
+Route::get('/admin/edit/{id}', [\App\Http\Controllers\AdminController::class, 'edit']);
+Route::post('/admin/edit/{id}', [\App\Http\Controllers\AdminController::class, 'update']);
+Route::get('/admin/delete/{id}', [\App\Http\Controllers\AdminController::class, 'destroy']);

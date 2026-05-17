@@ -46,20 +46,12 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-bottom">
                 <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/aditya-pratama-putra-525a54366/" target="_blank" title="LinkedIn">
-                        <i class="bx bxl-linkedin-square"></i>
-                    </a>
-                    <a href="https://github.com/adityaptm" target="_blank" title="GitHub">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="https://www.instagram.com/adityaptmptr_/" target="_blank" title="Instagram">
-                        <i class="bx bxl-instagram"></i>
-                    </a>
-                    <a href="https://wa.me/6281391664927" target="_blank" title="WhatsApp">
-                        <i class="bx bxl-whatsapp"></i>
-                    </a>
+                    <a href="https://www.linkedin.com/in/aditya-pratama-putra-525a54366/" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+                    <a href="https://github.com/adityaptm" target="_blank" title="GitHub"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.instagram.com/adityaptmptr_/" target="_blank" title="Instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://wa.me/6281391664927" target="_blank" title="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
                 </div>
                 <p>&copy; {{ date('Y') }} Aditya Pratama Putra. All Rights Reserved.</p>
             </div>
