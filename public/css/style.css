@@ -1198,3 +1198,51 @@ body {
   from {opacity: 0; transform: translateY(-5px);}
   to {opacity: 1; transform: translateY(0);}
 }
+
+/* --- ADDED FROM BLADE FILES --- */
+
+/* ABOUT PAGE HIGHLIGHTS */
+.about-highlights { margin-top: 1.5rem; }
+.about-highlights h4 { color: #10b981; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.8rem; }
+.about-highlights ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.about-highlights ul li { color: #94a3b8; font-size: 0.95rem; display: flex; align-items: center; gap: 0.6rem; }
+.about-highlights ul li::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #10b981; flex-shrink: 0; }
+
+/* INDEX QUICK INFO */
+.quick-info-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+.quick-info-table td { padding: 10px 14px; border: 1px solid #1e293b; color: #94a3b8; font-size: 0.9rem; }
+.quick-info-table td:first-child { color: #10b981; font-weight: 600; width: 160px; background: #111827; }
+.tech-list { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.8rem; padding: 0; }
+.tech-list li { background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: #10b981; padding: 4px 14px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; }
+.info-section { background: #020617; padding: 60px 0; }
+.info-inner { max-width: 720px; margin: 0 auto; }
+.tech-heading { color: #f1f5f9; font-size: 1rem; margin: 2rem 0 0.8rem; }
+
+/* INDEX HERO STATS OVERRIDES */
+.hero-stats { display: flex; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+.stat-item { text-align: center; }
+.stat-item h3 { font-size: 2rem; color: #10b981; margin: 0; }
+.stat-item p { font-size: 0.85rem; color: #94a3b8; margin: 0; }
+
+/* CONTACT SUCCESS MODAL */
+.success-overlay { position: fixed; inset: 0; background: rgba(2, 6, 23, 0.85); display: flex; align-items: center; justify-content: center; z-index: 9999; padding: 1rem; animation: fadeInOverlay 0.3s ease; }
+@keyframes fadeInOverlay { from { opacity: 0; } to { opacity: 1; } }
+.success-card { background: #111827; border: 1px solid #1e293b; border-radius: 12px; padding: 2.5rem 2rem 2rem; max-width: 440px; width: 100%; text-align: center; box-shadow: 0 10px 25px rgba(16, 185, 129, 0.15); animation: slideUp 0.35s cubic-bezier(.22,.68,0,1.2); position: relative; }
+@keyframes slideUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.success-icon { width: 72px; height: 72px; border-radius: 50%; background: #020617; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; border: 2px solid #10b981; animation: popIn 0.4s 0.2s cubic-bezier(.22,.68,0,1.4) both; }
+@keyframes popIn { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.success-icon i { font-size: 36px; color: #10b981; }
+.success-card h3 { font-size: 1.35rem; font-weight: 700; color: #f1f5f9; margin: 0 0 0.35rem; }
+.success-card p.sub { font-size: 0.9rem; color: #94a3b8; margin: 0 0 1.5rem; }
+.success-details { background: #020617; border: 1px solid #1e293b; border-radius: 10px; padding: 1rem 1.25rem; text-align: left; margin-bottom: 1.5rem; }
+.detail-row { display: flex; gap: 10px; padding: 0.45rem 0; border-bottom: 1px solid #1e293b; align-items: flex-start; }
+.detail-row:last-child { border-bottom: none; }
+.detail-row i { font-size: 16px; color: #10b981; margin-top: 2px; flex-shrink: 0; }
+.detail-row .label { font-size: 11px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 1px; }
+.detail-row .value { font-size: 0.875rem; color: #f1f5f9; word-break: break-word; }
+.btn-close-success { display: inline-flex; align-items: center; gap: 8px; background: #10b981; color: #020617; border: none; border-radius: 6px; padding: 12px 2rem; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+.btn-close-success:hover { background: #059669; }
+.progress-bar { position: absolute; bottom: 0; left: 0; height: 4px; background: #10b981; border-radius: 0 0 12px 12px; animation: shrink 7s linear forwards; }
+@keyframes shrink { from { width: 100%; } to { width: 0%; } }
+.alert.error { display: flex; align-items: flex-start; gap: 8px; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: #ef4444; padding: 1rem; border-radius: 6px; margin-bottom: 1.5rem; }
+.alert.error i { font-size: 18px; flex-shrink: 0; margin-top: 1px; }

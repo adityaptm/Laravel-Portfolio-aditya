@@ -2,43 +2,6 @@
 
 @section('title', 'About - Aditya Pratama Putra')
 
-@section('styles')
-<style>
-    .about-highlights {
-        margin-top: 1.5rem;
-    }
-    .about-highlights h4 {
-        color: #10b981;
-        font-size: 0.85rem;
-        text-transform: uppercase;
-        letter-spacing: 0.07em;
-        margin-bottom: 0.8rem;
-    }
-    .about-highlights ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    .about-highlights ul li {
-        color: #94a3b8;
-        font-size: 0.95rem;
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
-    }
-    .about-highlights ul li::before {
-        content: "";
-        display: inline-block;
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: #10b981;
-        flex-shrink: 0;
-    }
-</style>
-@endsection
 
 @section('content')
 <section id="about" class="about">
